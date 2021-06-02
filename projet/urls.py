@@ -25,6 +25,7 @@ urlpatterns = [
     path('',include('app1.urls')),
     path('Projet1',include('app1_1.urls')),
     path('Projet2',include('app1_2.urls')),
+    path('Projet3',include('cigars.urls')),
     url(r'^media/(?P<path>.*)$', serve, {'document_root': settings.MEDIA_ROOT}),
     url(r'^static/(?P<path>.*)$', serve, {'document_root': settings.STATIC_ROOT})
 
